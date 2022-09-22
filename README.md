@@ -6,7 +6,11 @@
 
 ## General Info
 This browser based web application to ...
+<<<<<<< HEAD
 * Hi my name is Viet, I'm excited about this project becasue I will get to learn how to build an application.
+=======
+* Hi my name is Youngwon. I'm excited about this project because it's my first project
+>>>>>>> 1f5779c2067a0e68ae0ba10dbf46c0ed0fad34d5
 	
 ## Technologies
 Technologies used for this project:
