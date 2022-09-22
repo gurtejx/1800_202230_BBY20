@@ -6,7 +6,7 @@
 
 ## General Info
 This browser based web application to ...
-* Hi my name is Youngwon. I'm excited about this project because it's my first project
+* Hi my name is Youngwon. I'm excited about this project because it's my first project and I like learning things
 	
 ## Technologies
 Technologies used for this project:
