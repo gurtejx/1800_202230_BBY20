@@ -6,6 +6,7 @@
 
 ## General Info
 This browser based web application to ...
+* Hi my name is  Youngwon, I'm excited about this project because it's my first project
 * Hi my name is Viet, I'm excited about this project becasue I will get to learn how to build an application.
 * Hi my name is Gurtej. I'm excited about this project because it's my first project
 	
