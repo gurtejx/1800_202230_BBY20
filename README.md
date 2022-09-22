@@ -6,6 +6,7 @@
 
 ## General Info
 This browser based web application to ...
+* Hi my name is Gurtej. I'm excited about this project because I'm going to learn new things.
 	
 ## Technologies
 Technologies used for this project:
