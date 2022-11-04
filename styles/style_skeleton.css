@@ -1,0 +1,230 @@
+#calendar {
+    text-align: center;
+}
+
+.jumbotron{
+    text-align: center;
+}
+#logoutButton{
+    display: none;
+}
+#loginSignupButton  {
+    display: none;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+/*============== CSS styles for our hamburger menu =====================*/
+
+/*============== Making a CSS grid for our sticky footer =====================*/
+#footer_container {
+    /*Parent Grid*/
+    display: grid;
+    width: 100%;
+    height: 7%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+    padding-bottom: 2%;
+}
+
+#daily {
+    /*Daily icon placement*/
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    justify-self: center;
+    position: relative;
+}
+#daily_text {
+    /*Placing text underneath the icon*/
+    left: 0%;
+}
+
+#weekly {
+    /*weekly icon placement*/
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    justify-self: center;
+    position: relative;
+    left: 100%;
+}
+
+#weekly_text {
+    /*Placing text underneath the icon*/
+    left: -5%;
+}
+#todo {
+    /*monthly icon placement*/
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    justify-self: center;
+    position: relative;
+    left: 200%;
+}
+#todo_text {
+    /*Placing text underneath the icon*/
+    left: -10%;
+}
+#add_post {
+    /*Post icon placement*/
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    justify-self: center;
+    position: relative;
+    left: 300%;
+}
+#add_post_text {
+    /*Placing text underneath the icon*/
+
+    left: 7%;
+}
+.foot_icons {
+    /*resizing and recoloring icons*/
+    padding-top: 0.5vw;
+    font-size: 2.2vw;
+    color: whitesmoke;
+}
+
+.centering_icon_text {
+    /* using relative and absolute positioning to center text for each icon*/
+    position: absolute;
+    z-index: 1%;
+    font-size: 1.2vw;
+    color: whitesmoke;
+    top: 72%;
+}
+
+.loggedIn {
+    display: none;
+}
+
+.weeklyScheduleContainer {
+    justify-content: center;
+    display: grid;
+    margin: 0 10px;
+    grid-template-columns: 35% 65%;
+}
+
+.weeklyScheduleHeader {
+    display: grid;
+}
+
+.weeklyScheduleDayHeader {
+    display: grid;
+    grid-template-rows: 100%;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    height: 5vh;
+}
+.weeklyScheduleBody {
+    display: grid;
+    grid-template-columns: 100%;
+    overflow-y: hidden;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.weeklyScheduleBody::-webkit-scrollbar {
+    display: none;
+}
+
+.weeklyScheduleDayContent {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    overflow-y: scroll;
+    height: 5vh;
+
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.weeklyScheduleDayContent::-webkit-scrollbar {
+    display: none;
+}
+
+.weeklyScheduleDayContent .card {
+    display: none;
+}
+
+.scheduleButtons {
+    display: block;
+}
+
+/* make layout responsive and make things look pretty */
+@media only screen and (min-width: 768px) {
+    .weeklyScheduleContainer {
+        grid-template-columns: 100%;
+    }
+
+    .weeklyScheduleHeader {
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+    }
+
+    .weeklyScheduleBody {
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .weeklyScheduleDayHeader {
+        font-size: inherit;
+    }
+
+    .weeklyScheduleDayContent {
+        height: 60vh;
+    }
+
+    .weeklyScheduleDayContent .card {
+        display: block;
+    }
+
+    .scheduleButtons {
+        display: none;
+    }
+} /*============== Making a CSS grid for our sticky footer =====================*/
+
+@media only screen and (max-width: 768px) {
+    .foot_icons {
+        /*resizing and recoloring icons*/
+        font-size: 7vw;
+        color: whitesmoke;
+    }
+
+    .centering_icon_text {
+        /* using relative and absolute positioning to center text for each icon*/
+        position: absolute;
+        z-index: 1%;
+        top: 59%;
+        font-size: 4vw;
+        color: whitesmoke;
+    }
+    #add_post_text {
+        /*Placing text underneath the icon*/
+
+        left: -5%;
+    }
+    #todo_text {
+        /*Placing text underneath the icon*/
+        left: -15%;
+    }
+    #weekly_text {
+        /*Placing text underneath the icon*/
+        left: -20%;
+    }
+    #daily_text {
+        /*Placing text underneath the icon*/
+        left: -10%;
+    }
+}
