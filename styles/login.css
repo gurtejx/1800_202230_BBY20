@@ -1,0 +1,9 @@
+.jumbotron{
+    text-align: center;
+}
+#logoutButton{
+    display: none;
+}
+#loginSignupButton  {
+    display: none;
+}
