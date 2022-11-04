@@ -28,7 +28,7 @@
     /*Parent Grid*/
     display: grid;
     width: 100%;
-    height: auto;
+    height: 7%;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 100%;
     padding-bottom: 2%;
@@ -86,7 +86,8 @@
 }
 .foot_icons {
     /*resizing and recoloring icons*/
-    font-size: 4vw;
+    padding-top: 0.5vw;
+    font-size: 2.2vw;
     color: whitesmoke;
 }
 
@@ -94,7 +95,7 @@
     /* using relative and absolute positioning to center text for each icon*/
     position: absolute;
     z-index: 1%;
-    font-size: 1.9vw;
+    font-size: 1.2vw;
     color: whitesmoke;
     top: 72%;
 }
