@@ -5,12 +5,6 @@
 .jumbotron{
     text-align: center;
 }
-#logoutButton{
-    display: none;
-}
-#loginSignupButton  {
-    display: none;
-}
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
@@ -34,19 +28,19 @@
     padding-bottom: 2%;
 }
 
-#daily {
+#chat {
     /*Daily icon placement*/
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
     justify-self: center;
     position: relative;
 }
-#daily_text {
+#chat_text {
     /*Placing text underneath the icon*/
     left: 0%;
 }
 
-#weekly {
+#main {
     /*weekly icon placement*/
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
@@ -55,11 +49,11 @@
     left: 100%;
 }
 
-#weekly_text {
+#main_text {
     /*Placing text underneath the icon*/
     left: -5%;
 }
-#todo {
+#map {
     /*monthly icon placement*/
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
@@ -67,7 +61,7 @@
     position: relative;
     left: 200%;
 }
-#todo_text {
+#_text {
     /*Placing text underneath the icon*/
     left: -10%;
 }
@@ -215,15 +209,15 @@
 
         left: -5%;
     }
-    #todo_text {
+    #map_text {
         /*Placing text underneath the icon*/
         left: -15%;
     }
-    #weekly_text {
+    #main_text {
         /*Placing text underneath the icon*/
         left: -20%;
     }
-    #daily_text {
+    #chat_text {
         /*Placing text underneath the icon*/
         left: -10%;
     }
