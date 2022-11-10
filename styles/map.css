@@ -1,0 +1,11 @@
+#mapImage {
+    display: grid;
+    height: fit-content;
+    align-items: center;
+    justify-items: center;
+} 
+
+#mapImage img {
+    width: 70%;
+    height: 80vh;
+}
