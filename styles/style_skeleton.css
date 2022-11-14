@@ -61,7 +61,7 @@
     position: relative;
     left: 200%;
 }
-#_text {
+#map_text {
     /*Placing text underneath the icon*/
     left: -10%;
 }
@@ -154,40 +154,7 @@
     display: block;
 }
 
-/* make layout responsive and make things look pretty */
-@media only screen and (min-width: 768px) {
-    .weeklyScheduleContainer {
-        grid-template-columns: 100%;
-    }
-
-    .weeklyScheduleHeader {
-        display: grid;
-        grid-template-columns: repeat(5, 20%);
-    }
-
-    .weeklyScheduleBody {
-        display: grid;
-        grid-template-columns: repeat(5, 20%);
-        overflow-y: scroll;
-        overflow-x: hidden;
-    }
-
-    .weeklyScheduleDayHeader {
-        font-size: inherit;
-    }
-
-    .weeklyScheduleDayContent {
-        height: 60vh;
-    }
-
-    .weeklyScheduleDayContent .card {
-        display: block;
-    }
-
-    .scheduleButtons {
-        display: none;
-    }
-} /*============== Making a CSS grid for our sticky footer =====================*/
+ /*============== Making a CSS grid for our sticky footer =====================*/
 
 @media only screen and (max-width: 768px) {
     .foot_icons {
@@ -215,7 +182,7 @@
     }
     #main_text {
         /*Placing text underneath the icon*/
-        left: -20%;
+        left: -10%;
     }
     #chat_text {
         /*Placing text underneath the icon*/
