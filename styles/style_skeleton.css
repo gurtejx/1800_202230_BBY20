@@ -28,14 +28,14 @@
     padding-bottom: 2%;
 }
 
-#chat {
+#friends {
     /*Daily icon placement*/
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
     justify-self: center;
     position: relative;
 }
-#chat_text {
+#friends_text {
     /*Placing text underneath the icon*/
     left: 0%;
 }
@@ -184,7 +184,7 @@
         /*Placing text underneath the icon*/
         left: -10%;
     }
-    #chat_text {
+    #friends_text {
         /*Placing text underneath the icon*/
         left: -10%;
     }
