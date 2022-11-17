@@ -18,7 +18,6 @@ function insertName() {
     });
 }
 insertName(); //run the function
-<<<<<<< HEAD
 
 function writeHikes() {
     //define a variable for the collection you want to create in Firestore to populate data
@@ -56,5 +55,3 @@ function writeHikes() {
         last_updated: firebase.firestore.Timestamp.fromDate(new Date("March 10, 2022"))
    });
 }
-=======
->>>>>>> f961ff9b1e62d8c06f2275a84645e6c5d7de237a

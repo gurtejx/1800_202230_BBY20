@@ -42,7 +42,7 @@
     <!-- Other libraries and styles of your own -->
     <!-------------------------------------------->
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
-    <!-- <link rel="stylesheet" href="./styles/chat.css" /> -->
+    <link rel="stylesheet" href="./styles/chat.css" />
   </head>
   <body>
     <!------------------------------>
@@ -54,36 +54,48 @@
 
 
     <!-- the body of your page goes here -->
-    <div class="container container-fluid">
-        <h1>User Profile</h1>
-        <form>
-          <fieldset class="mb-3" id="personalInfoFields">
-            <div class="form-group">
-              <label>Create Post</label>
-              <input
-                type="textarea"
-                
-                id="nameInput"
-                class="form-control"
-                placeholder="What's on your mind..."
-              />
-            </div>
-          </fieldset>
-          <div class="d-flex justify-content-end mt-5">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              onclick="editUserInfo()"
-            >
-              Cancel
-            </button>
-            <span style="width: 10px"></span>
-            <button type="button" class="btn btn-info" onclick="saveUserInfo()">
-              Post
-            </button>
-          </div>
-        </form>
-      </div>
+    <div class="container">
+      <br>
+      <h1>New Post<span id="HikeName"></span></h1>
+      <br>
+      <form>
+          <div class="form-group">
+              <label for="exampleFormControlInput1">Add a title</label>
+              <input type="text" class="form-control" id="title" placeholder="Title">
+          </div><br>
+          <div class="form-group">
+              <label for="exampleFormControlSelect1">What type of sport do you want to play?</label>
+              <select class="form-control" id="sport">
+                  <option>Soccer</option>
+                  <option>Tennis</option>
+                  <option>Basket ball</option>
+                  <option>Volley ball</option>
+                  <option>Badminton</option>
+                  <option>Other...</option>
+              </select>
+              <br>
+              <div class="form-group">
+                  <label for="exampleFormControlSelect1">Which season did you do the hike?</label>
+                  <select class="form-control" id="season">
+                      <option>Fall</option>
+                      <option>Winter</option>
+                      <option>Spring</option>
+                      <option>Summer</option>
+                  </select>
+                  <br>
+              </div>
+              <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Detail descriptions</label>
+                  <textarea class="form-control" id="description" rows="3"></textarea>
+              </div>
+              <br>
+              <div class="d-flex justify-content-end">
+                  <button type="button" class="btn btn-lg btn-primary pull-right" onclick="writePost()">Submit</button>
+              </div>
+      </form>
+
+
+  </div>
       
 
     <!-- our own footer goes here-->
@@ -94,6 +106,7 @@
     <script src="./scripts/firebaseAPI_TEAM99.js"></script>
     <script src="./scripts/skeleton.js"></script>
     <script src="./scripts/navbar.js"></script>
+    <script src="./scripts/newpost.js"></script>
     <!-- <script src="./scripts/script.js"></script> -->
 
   </body>
