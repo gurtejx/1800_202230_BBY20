@@ -29,7 +29,6 @@
 }
 
 #friends {
-    /*Daily icon placement*/
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
     justify-self: center;
@@ -41,7 +40,6 @@
 }
 
 #main {
-    /*weekly icon placement*/
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
     justify-self: center;
@@ -61,7 +59,7 @@
     position: relative;
     left: 200%;
 }
-#_text {
+#map_text {
     /*Placing text underneath the icon*/
     left: -10%;
 }
@@ -98,96 +96,9 @@
     display: none;
 }
 
-.weeklyScheduleContainer {
-    justify-content: center;
-    display: grid;
-    margin: 0 10px;
-    grid-template-columns: 35% 65%;
-}
 
-.weeklyScheduleHeader {
-    display: grid;
-}
 
-.weeklyScheduleDayHeader {
-    display: grid;
-    grid-template-rows: 100%;
-    align-items: center;
-    font-size: 14px;
-    font-weight: bold;
-    height: 5vh;
-}
-.weeklyScheduleBody {
-    display: grid;
-    grid-template-columns: 100%;
-    overflow-y: hidden;
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.weeklyScheduleBody::-webkit-scrollbar {
-    display: none;
-}
-
-.weeklyScheduleDayContent {
-    display: grid;
-    grid-template-columns: 100%;
-    justify-content: center;
-    overflow-y: scroll;
-    height: 5vh;
-
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.weeklyScheduleDayContent::-webkit-scrollbar {
-    display: none;
-}
-
-.weeklyScheduleDayContent .card {
-    display: none;
-}
-
-.scheduleButtons {
-    display: block;
-}
-
-/* make layout responsive and make things look pretty */
-@media only screen and (min-width: 768px) {
-    .weeklyScheduleContainer {
-        grid-template-columns: 100%;
-    }
-
-    .weeklyScheduleHeader {
-        display: grid;
-        grid-template-columns: repeat(5, 20%);
-    }
-
-    .weeklyScheduleBody {
-        display: grid;
-        grid-template-columns: repeat(5, 20%);
-        overflow-y: scroll;
-        overflow-x: hidden;
-    }
-
-    .weeklyScheduleDayHeader {
-        font-size: inherit;
-    }
-
-    .weeklyScheduleDayContent {
-        height: 60vh;
-    }
-
-    .weeklyScheduleDayContent .card {
-        display: block;
-    }
-
-    .scheduleButtons {
-        display: none;
-    }
-} /*============== Making a CSS grid for our sticky footer =====================*/
+ /*============== Making a CSS grid for our sticky footer =====================*/
 
 @media only screen and (max-width: 768px) {
     .foot_icons {
@@ -215,7 +126,7 @@
     }
     #main_text {
         /*Placing text underneath the icon*/
-        left: -20%;
+        left: -10%;
     }
     #friends_text {
         /*Placing text underneath the icon*/

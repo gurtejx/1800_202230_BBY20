@@ -38,11 +38,13 @@
       rel="stylesheet"
       href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css"
     />
+    <link rel="stylesheet" href="./styles/style_skeleton.css">
+</head>
     <!-------------------------------------------->
     <!-- Other libraries and styles of your own -->
     <!-------------------------------------------->
-    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
-    <link rel="stylesheet" href="./styles/style_skeleton.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./styles/chat.css" /> -->
   </head>
   <body>
     <!------------------------------>
@@ -53,31 +55,27 @@
     <nav id="navbarPlaceholder"></nav>
 
     <!-- the body of your page goes here -->
-<<<<<<< HEAD
-    <template id="postTemplate">
-        <div class="post">
-            <div class="post-body">
-                <h5 class="post-title">placeholder</h5>
-                <p class="post-length">placeholder</p>
-                <a href="review.html" id="write-review">Write a review</a>
-=======
-    <template id="postCardTemplate">
-        <div class="card">
-            <div class="card-body">
-                <h3 class="card-details">placeholder</h3>
-                <p class="card-date">placeholder</p>
-                <p class="card-location">placeholder</p>
-                <p class="card-category">placeholder</p>
-                <!-- <a href="post.html" id="write-review">Write a review</a> -->
->>>>>>> b18830399ddac42893c5711edbf4b6d23696e8de
-                <br>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
-                </p>
-                <a href="#" class="btn btn-primary" id="get-details" style="float: right">Get Details</a>
-            </div>
-        </div>
-    </template>
+    <div class="container mt-3">
+      <input
+        type="text"
+        class="form-control mt-2"
+        id="title"
+        placeholder="title"
+      />
       
+      <textarea class="form-control mt-2" id="content">content</textarea>
+      <label for="cars">Choose a activity:</label>
+      <select name="cars" id="activity" form="carform">
+        <option value="Basketball">Basketball</option>
+        <option value="Badminton">Badminton</option>
+        <option value="Table Tennis">Table Tennis</option>
+        <option value="Hiking">Hiking</option>
+        <option value="Soccer">Soccer</option>
+      </select>
+      <input type = "date" id="date">
+      <button class="btn btn-danger mt-3" id="post">post</button>
+    </div>
+
     <!-- our own footer goes here-->
     <nav id="footerPlaceholder"></nav>
     <!---------------------------------------------->
@@ -86,8 +84,7 @@
     <script src="./scripts/firebaseAPI_TEAM99.js"></script>
     <script src="./scripts/skeleton.js"></script>
     <script src="./scripts/navbar.js"></script>
-    <script src="./scripts/main.js"></script>
+    <script src="./scripts/post.js"></script>
     <!-- <script src="./scripts/script.js"></script> -->
-
   </body>
 </html>
