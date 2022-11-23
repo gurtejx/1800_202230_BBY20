@@ -23,7 +23,7 @@ function populateInfo() {
                   if (userSchool != null) {
                       document.getElementById("schoolInput").value = userSchool;
                   }
-                  if (userCity != null) {
+                  if (userCountry != null) {
                       document.getElementById("countryInput").value = userCountry;
                   }
                   if (userEmail != null) {
@@ -58,6 +58,7 @@ function saveUserInfo() {
   })
   .then(() => {
     console.log("Document successfully updated!");
+    document.getElementById('personalInfoFields').disabled;
   })
   
   document.getElementById('personalInfoFields').disabled = true;
