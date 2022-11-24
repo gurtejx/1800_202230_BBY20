@@ -42,11 +42,15 @@ firebase.auth().onAuthStateChanged((user) => {
       db.collection("posts")
         .add(save)
         .then(() => {
-          window.location.href = "/index.html";
+          window.location.href = "/main.html";
         })
         .catch((err) => {
           console.log(err);
         });
     });
   }
+  else {
+    // No user is signed in.
+    alert ("No user is signed in");
+}
 });

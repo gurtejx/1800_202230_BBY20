@@ -32,7 +32,7 @@ function populateInfo() {
               })
       } else {
           // No user is signed in.
-          console.log ("No user is signed in");
+          alert ("No user is signed in");
       }
   });
 }
