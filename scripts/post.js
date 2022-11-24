@@ -25,20 +25,28 @@
         // No user is signed in.
     }
 });*/
+const currentDate = new Date();
 
-$("#post").click(function () {
-  var save = {
-    title: $("#title").val(),
-    content: $("#content").val(),
-    activity: $("#activity").val(),
-    date: $("#date").val(),
-  };
-  db.collection("posts")
-    .add(save)
-    .then(() => {
-      window.location.href = "/index.html";
-    })
-    .catch((err) => {
-      console.log(err);
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    $("#post").click(function () {
+      var save = {
+        title: $("#title").val(),
+        content: $("#content").val(),
+        activity: $("#activity").val(),
+        date: $("#date").val(),
+        postDate: currentDate.toLocaleString('en-us'),
+        owner: user.uid,
+        email: user.email,
+      };
+      db.collection("posts")
+        .add(save)
+        .then(() => {
+          window.location.href = "/index.html";
+        })
+        .catch((err) => {
+          console.log(err);
+        });
     });
+  }
 });

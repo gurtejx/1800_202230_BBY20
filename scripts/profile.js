@@ -59,6 +59,7 @@ function saveUserInfo() {
   })
   .then(() => {
     console.log("Document successfully updated!");
+    document.getElementById('personalInfoFields').disabled;
   })
   
   document.getElementById('personalInfoFields').disabled = true;
