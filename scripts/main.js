@@ -56,8 +56,6 @@ function writePost() {
         last_updated: firebase.firestore.Timestamp.fromDate(new Date("March 10, 2022"))
    });
 }
-<<<<<<< HEAD
-=======
 
 function populateCardsDynamically() {
     let postCardTemplate = document.getElementById("postCardTemplate");
@@ -83,4 +81,3 @@ function populateCardsDynamically() {
         })
 }
 populateCardsDynamically();
->>>>>>> b18830399ddac42893c5711edbf4b6d23696e8de

@@ -1,4 +1,4 @@
-var currentUser
+var currentUser;
 
 function populateInfo() {
   firebase.auth().onAuthStateChanged(user => {
@@ -7,6 +7,7 @@ function populateInfo() {
 
           //go to the correct user document by referencing to the user uid
           currentUser = db.collection("users").doc(user.uid)
+          console.log(currentUser);
           //get the document for current user.
           currentUser.get()
               .then(userDoc => {
@@ -23,7 +24,7 @@ function populateInfo() {
                   if (userSchool != null) {
                       document.getElementById("schoolInput").value = userSchool;
                   }
-                  if (userCity != null) {
+                  if (userCountry != null) {
                       document.getElementById("countryInput").value = userCountry;
                   }
                   if (userEmail != null) {
@@ -54,7 +55,7 @@ function saveUserInfo() {
     name: userName,
     school: userSchool,
     country: userCountry,
-    email: userEmail,
+    email: userEmail
   })
   .then(() => {
     console.log("Document successfully updated!");
