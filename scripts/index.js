@@ -13,7 +13,7 @@ db.collection("posts")
         <h5 class="card-title">${doc.data().activity}</h5>
         <p class="card-text">${doc.data().content}<br>${doc.data().date}
         ${doc.data().email}<br></p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a href="http://gmail.com" target="_blank" class="btn btn-primary">Try Contact</a>
       </div>
     </div>`
       $('.container').append(template)
