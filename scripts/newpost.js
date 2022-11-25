@@ -27,7 +27,8 @@ function populateInfo() {
                 })
         } else {
             // No user is signed in.
-            console.log ("No user is signed in");
+            window.location.href = 'http://127.0.0.1:5502/Login.html';
+            alert ("No user is signed in. Access denied.");
         }
     });
 }
