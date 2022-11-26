@@ -27,7 +27,7 @@ function populateInfo() {
                 })
         } else {
             // No user is signed in.
-            window.location.href = 'http://127.0.0.1:5502/Login.html';
+            window.location.href = "login.html";
             alert ("No user is signed in. Access denied.");
         }
     });
@@ -63,11 +63,15 @@ function writePost() {
               timestamp: firebase.firestore.FieldValue.serverTimestamp(),
             })
             .then(() => {
-              window.location.href = "thanks.html"; //new line added
+              // alert ("Post created successfully.");
+              // window.location.href = "http://127.0.0.1:5502/thanks.html"; //new line added
+              // setTimeout(window.location.href = "main.html", 2);
             });
         });
       } else {
         // No user is signed in.
+        window.location.href = "login.html";
+        alert ("No user is signed in. Access denied.");
       }
     });
   }

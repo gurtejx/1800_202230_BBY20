@@ -15,7 +15,7 @@ firebase.auth().onAuthStateChanged((user) => {
       db.collection("posts")
         .add(save)
         .then(() => {
-          window.location.href = "/main.html";
+          window.location.href = "thanks.html";
         })
         .catch((err) => {
           console.log(err);
@@ -24,7 +24,7 @@ firebase.auth().onAuthStateChanged((user) => {
   }
   else {
     // No user is signed in.
-    window.location.href = 'http://127.0.0.1:5502/Login.html';
+    window.location.href = "login.html";
     alert ("No user is signed in. Access denied.");
 }
 });
