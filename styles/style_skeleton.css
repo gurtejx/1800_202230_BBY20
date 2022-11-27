@@ -13,7 +13,6 @@ textarea {height: 40vh;}
 
 
 #footer_container {
-    
     display: grid;
     width: 100%;
     height: 7%;
@@ -75,6 +74,20 @@ textarea {height: 40vh;}
     padding-top: 0.5vw;
     font-size: 2.2vw;
     color: whitesmoke;
+}
+
+.button1{
+    background-color: blue; /* Green */
+    border: none;
+    color: whitesmoke   ;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: solid black 0.5px;
 }
 
 .centering_icon_text {

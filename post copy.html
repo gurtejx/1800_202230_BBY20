@@ -56,23 +56,32 @@
     <!-- the body of your page goes here -->
     <h1 style="margin-top: 20px;  margin-left: 120px">Make A Post</h1>
     <div class="container mt-3">
+      <label form="exampleFormControlInput1">Add a title</label>
       <input
         type="text"
         class="form-control mt-2"
         id="title"
         placeholder="Title of your post goes here"/>
-      
+        <br><br>
+        <label for="exampleFormControlInput1">Type of activity</label>
+        <br>
+        <input type="text" id="activity">
+        <br><br>
+      </select>
+      <label for="exampleFormControlInput1">Date and time</label>
+      <br><br>
+      <input type = "date" id="date"> <input type="time" id="time">
+      <br><br>
+        <label for="exampleFormControlTextarea1">Detail descriptions</label>
       <textarea class="form-control mt-2" id="content" placeholder="Content of your post goes here"></textarea>
-      <label for="cars">Choose a activity:</label>
-      <select name="cars" id="activity" form="carform">
-        <option value="Basketball">Basketball</option>
+      <!-- <label for="cars">Choose a activity:</label> -->
+      <!-- <select name="cars" id="activity" form="carform"> -->
+        <!-- <option value="Basketball">Basketball</option>
         <option value="Badminton">Badminton</option>
         <option value="Table Tennis">Table Tennis</option>
         <option value="Hiking">Hiking</option>
-        <option value="Soccer">Soccer</option>
-      </select>
-      <input type = "date" id="date">
-      <button class="btn btn-danger mt-3" id="post">Post</button>
+        <option value="Soccer">Soccer</option> -->
+      <button class="btn btn-info mt-3 justify-content-end" id="post">Post</button>
     </div>
 
     <!-- our own footer goes here-->

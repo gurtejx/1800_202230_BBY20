@@ -38,11 +38,13 @@
       rel="stylesheet"
       href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css"
     />
+    <link rel="stylesheet" href="./styles/style_skeleton.css">
+    />
     <!-------------------------------------------->
     <!-- Other libraries and styles of your own -->
     <!-------------------------------------------->
-    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
-    <link rel="stylesheet" href="./styles/chat.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
   </head>
   <body>
     <!------------------------------>
@@ -54,14 +56,14 @@
 
 
     <!-- the body of your page goes here -->
-    <div class="container">
+    <div class="container mt-3">
       <br>
       <h1>New Post<span id="HikeName"></span></h1>
       <br>
       <form>
           <div class="form-group">
-              <label for="exampleFormControlInput1">Add a title</label>
-              <input type="text" class="form-control" id="title" placeholder="Title">
+              <label form="exampleFormControlInput1">Add a title</label>
+              <input type="text" class="form-control mt-2" id="title"placeholder="Title">
           </div>
           <br>
           <div class="form-group">
@@ -71,15 +73,37 @@
               <br>
               <input type="date" id="date"> <input type="time" id="time">
               <br><br>
+              <label for="exampleFormControlInput1">Type of activity</label>
+              <br>
+              <input type="text" id="activity">
+              <br><br>
               <div class="form-group">
                   <label for="exampleFormControlTextarea1">Detail descriptions</label>
-                  <textarea class="form-control" id="description" rows="3"></textarea>
+                  <textarea class="form-control mt-2" id="content" rows="3" placeholder="Content of your post goes here"></textarea>
               </div>
               <br>
               <div class="d-flex justify-content-end">
-                  <button type="button" class="btn btn-lg btn-primary pull-right" onclick="writePost()">Submit</button>
+                <button class="btn btn-danger mt-3" id="post">Post</button>
               </div>
       </form>
+      <!-- <input
+      type="text"
+      class="form-control mt-2"
+      id="title"
+      placeholder="Title of your post goes here"/>
+    
+    <textarea class="form-control mt-2" id="content" placeholder="Content of your post goes here"></textarea>
+    <label for="cars">Choose a activity:</label>
+    <select name="cars" id="activity" form="carform">
+      <option value="Basketball">Basketball</option>
+      <option value="Badminton">Badminton</option>
+      <option value="Table Tennis">Table Tennis</option>
+      <option value="Hiking">Hiking</option>
+      <option value="Soccer">Soccer</option>
+    </select>
+    <input type = "date" id="date">
+    <button class="btn btn-danger mt-3" id="post">Post</button>
+  </div> -->
 
 
   </div>
@@ -93,7 +117,7 @@
     <script src="./scripts/firebaseAPI_TEAM99.js"></script>
     <script src="./scripts/skeleton.js"></script>
     <script src="./scripts/navbar.js"></script>
-    <script src="./scripts/newpost.js"></script>
+    <!-- <script src="./scripts/post.js"></script> -->
     <!-- <script src="./scripts/script.js"></script> -->
 
   </body>

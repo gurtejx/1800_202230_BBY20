@@ -34,6 +34,7 @@ firebase.auth().onAuthStateChanged((user) => {
         title: $("#title").val(),
         content: $("#content").val(),
         activity: $("#activity").val(),
+        time: $("#time").val(),
         date: $("#date").val(),
         postDate: currentDate.toLocaleString('en-us'),
         owner: user.uid,

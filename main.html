@@ -50,13 +50,23 @@
     <!-- Your HTML Layout go here -->
     <!------------------------------>
     <nav id="navbarPlaceholder"></nav>
+
     <div class="container-fluid bg-light text-dark p-5">
-        <div class="container bg-light p-5">
-            <h1 class="display-4">Good morning, <span id="name-goes-here"></span></h1>
-            <hr><br>
-      <h2>All Posts</h2>
-        </div>
-        <div class="cardContainer">
+      <div class="container bg-light p-5">
+      <h1 class="display-4">Good morning, <span id="name-goes-here"></span></h1>
+      <hr><br>
+      <div id="post">
+        <a href="post copy.html">
+          <button class="button button1">Add Post + </button>
+            <!-- <span id="add_post_text" class="centering_icon_text">Post</span> -->
+        </a>
+      </div> 
+      <h2>All Posts</h2>  
+
+
+    </div>
+
+    <div class="cardContainer">
       <div class="card text-center"></div>
     </div>  
 
@@ -68,7 +78,6 @@
     <script src="./scripts/firebaseAPI_TEAM99.js"></script>
     <script src="./scripts/skeleton.js"></script>
     <script src="./scripts/navbar.js"></script>
-    
     <script src="./scripts/index.js"></script>
     <script src="./scripts/main.js"></script>
 
