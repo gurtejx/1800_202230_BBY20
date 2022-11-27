@@ -1,32 +1,4 @@
 // firebase.auth().onAuthStateChanged(user => {
-//     if (user) {
-//         var currentUser = db.collection("users").doc(user.uid)
-//         var userID = user.uid;
-//         //get the document for current user.
-//         currentUser.get()
-//             .then(userDoc => {
-//                 var userEmail = userDoc.data().email;
-//                 db.collection("Reviews").add({
-//                     code: hikeID,
-//                     userID: userID,
-//                     title: Title,
-//                     level: Level,
-//                     season: Season,
-//                     description: Description,
-//                     flooded: Flooded,
-//                     scrambled: Scrambled,
-//                     timestamp: firebase.firestore.FieldValue.serverTimestamp()
-//                 }).then(()=>{
-//                     window.location.href = "thanks.html"; //new line added
-//                 })
-//             })
-               
-//     } else {
-//         // No user is signed in.
-//     }
-// });
-
-// firebase.auth().onAuthStateChanged(user => {
 //     // Check if user is signed in:
 //     if (user) {
 
@@ -74,6 +46,8 @@ function insertName() {
 
         } else {
             // No user is signed in.
+            window.location.href = "login.html";
+            alert ("No user is signed in. Access denied.");
         }
     });
 }

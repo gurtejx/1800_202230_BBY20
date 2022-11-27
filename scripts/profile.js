@@ -33,7 +33,8 @@ function populateInfo() {
               })
       } else {
           // No user is signed in.
-          alert ("No user is signed in");
+          window.location.href = "login.html";
+          alert ("No user is signed in. Access denied.");
       }
   });
 }

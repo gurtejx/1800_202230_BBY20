@@ -47,32 +47,41 @@
     <!------------------------------>
 
     <!-- our own navbar goes here -->
-    <nav id="navbarPlaceholder"></nav>
-
-
+    <!-- <nav id="navbarPlaceholder"></nav> -->
 
     <!-- the body of your page goes here -->
-    <div class="welcome text-center">
-        <img class="d-block mx-auto mb-4 mt-2" src="./images/landing-page.webp" alt="" width="50%" height="auto">
-        <h1>Welcome to BBY 20  app</h1>
-        <a href="login.html" class="btn btn-info" role="button">Log in</a>
-   </div>
-    
-</div>
-
-    <!-- stuff -->
+    <div class="card text-center">
+        <div class="card-header">
+          Post created successfully!
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Thanks for submitting your post!</h5>
+          <p class="card-text">Redirecting in 2 seconds..</p>
+        </div>
+      </div>
 
     <!-- our own footer goes here-->
     <nav id="footerPlaceholder"></nav>
+
     <!---------------------------------------------->
     <!-- Your own JavaScript functions go here    -->
     <!---------------------------------------------->
     <script src="./scripts/firebaseAPI_TEAM99.js"></script>
     <script src="./scripts/skeleton.js"></script>
-    <script src="./scripts/navbar.js"></script>
-    <script src="./scripts/index.js"></script>
-    <!-- <script src="./scripts/script.js"></script> -->
+    <script src="./scripts/post.js"></script>
+    <script src="./scripts/main.js"></script>
+
+    <script type="text/javascript">
+      window.onload = setTimeout( myFunction, 2000); // call function with parameters on page load
+      // function redirect( num1, num2 ) {
+      //    alert(" The sum of num1 and num2 is " + ( num1 + num2 ) );
+      //    message.innerHTML = "Showing the message after alert box."
+      // }
+
+      function myFunction() {
+        window.location.href = "main.html";
+      }
+   </script>
 
 </body>
-
 </html>
