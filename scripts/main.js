@@ -35,8 +35,7 @@ function deleteButton() {
         .then((result) => {
           result.forEach((doc) => {
             if (doc.data().owner == user_Name) {
-                const button = document.querySelector('.deleteButton');
-                button.setAttribute("display", "block");
+                document.getElementById("deletebutton").style.display = "block";
             }
 
           });
