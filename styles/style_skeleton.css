@@ -7,9 +7,23 @@ body{
     background-color: #1d1e22;
     color: #d4d4dc;
 }
-.card{
-    margin-bottom: 10px;
+
+.inner-div {
+    background-color: #393f4d;
+    color: #d4d4dc;
 }
+
+.card{
+    margin-bottom: 18px;
+    color: black;
+}
+
+.modified-header {
+    background-color: #1d1e22;
+    color: #d4d4dc;
+    font-weight: 600;
+}
+
 textarea {height: 40vh;}
 
 .nav-text {
@@ -82,15 +96,14 @@ textarea {height: 40vh;}
     /*resizing and recoloring icons*/
     padding-top: 0.8vw;
     padding-bottom: 0.8vw;
-    font-size: 2.2vw;
     color:#d4d4dc;
 }
 
 .button1{
-    background-color: blue; 
+    background-color: #1d1e22; 
     border: none;
     color: whitesmoke;
-    padding: 10px 25px;
+    padding: 8px 18px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -98,7 +111,11 @@ textarea {height: 40vh;}
     margin-bottom: 20px;
     cursor: pointer;
     border-radius: 10px;
-    border: solid black 0.5px;
+    /* border: solid #1d1e22 3.5px; */
+}
+
+.button1:hover {
+    box-shadow: 0 0 2.5px whitesmoke;
 }
 
 .centering_icon_text {
@@ -112,6 +129,11 @@ textarea {height: 40vh;}
 
 .loggedIn {
     display: none;
+}
+
+.form-label {
+    font-size: 19px;
+    font-weight: 600;
 }
 
 /* h2{
