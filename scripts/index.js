@@ -5,7 +5,7 @@ db.collection("posts")
     result.forEach((doc) => {
       console.log(doc.data());
       var template = `<div class="card">
-      <div class="card-header">
+      <div class="card-header  modified-header">
       ${doc.data().title}
       </div>
       <div class="card-body">
