@@ -53,28 +53,30 @@
 
     <!-- our own navbar goes here -->
     <nav id="navbarPlaceholder"></nav>
+    <!-- <h2>New Post</h2>
+    <br> -->
 
     <!-- the body of your page goes here -->
     <div class="container mt-3">
-      <input
-        type="text"
-        class="form-control mt-2"
-        id="title"
-        placeholder="title"
-      />
+      <h1><span id="HikeName">New Post</span></h1>
+      <br>
       
-      <textarea class="form-control mt-2" id="content">content</textarea>
-      <label for="cars">Choose a activity:</label>
-      <select name="cars" id="activity" form="carform">
-        <option value="Basketball">Basketball</option>
-        <option value="Badminton">Badminton</option>
-        <option value="Table Tennis">Table Tennis</option>
-        <option value="Hiking">Hiking</option>
-        <option value="Soccer">Soccer</option>
-      </select>
-      <input type = "date" id="date">    <input type="time" id="time">
-      <button class="btn btn-danger mt-3" id="post">post</button>
+      <label form="exampleFormControlInput1">Add a title</label>
+      <input type="text" class="form-control mt-2" id="title" placeholder="Title of your post goes here...">
+      <br>
+      <label for="exampleFormControlInput1">Date and time</label>
+      <br>
+      <input type="date" id="date"> <input type="time" id="time">
+      <br><br>
+      <label for="exampleFormControlInput1">Type of activity</label>
+      <br>
+      <input type="text" id="activity">
+      <br><br>
+      <label for="exampleFormControlTextarea1">Detail descriptions</label>
+                  <textarea class="form-control mt-2" id="content" rows="3" placeholder="Content of your post goes here..."></textarea>
+      <button class="btn btn-primary mt-3" id="post">Post</button>
     </div>
+    <br><br>
 
     <!-- our own footer goes here-->
     <nav id="footerPlaceholder"></nav>
