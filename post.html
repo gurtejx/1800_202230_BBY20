@@ -38,11 +38,13 @@
       rel="stylesheet"
       href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css"
     />
+    <link rel="stylesheet" href="./styles/style_skeleton.css">
+</head>
     <!-------------------------------------------->
     <!-- Other libraries and styles of your own -->
     <!-------------------------------------------->
-    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
-    <link rel="stylesheet" href="./styles/style_skeleton.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./styles/chat.css" /> -->
   </head>
   <body>
     <!------------------------------>
@@ -51,24 +53,31 @@
 
     <!-- our own navbar goes here -->
     <nav id="navbarPlaceholder"></nav>
+    <!-- <h2>New Post</h2>
+    <br> -->
 
     <!-- the body of your page goes here -->
-    <template id="postCardTemplate">
-        <div class="card">
-            <div class="card-body">
-                <h3 class="card-details">placeholder</h3>
-                <p class="card-date">placeholder</p>
-                <p class="card-location">placeholder</p>
-                <p class="card-category">placeholder</p>
-                <!-- <a href="post.html" id="write-review">Write a review</a> -->
-                <br>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
-                </p>
-                <a href="#" class="btn btn-primary" id="get-details" style="float: right">Get Details</a>
-            </div>
-        </div>
-    </template>
+    <div class="container mt-3">
+      <h1><span id="HikeName">New Post</span></h1>
+      <br>
       
+      <label form="exampleFormControlInput1">Add a title</label>
+      <input type="text" class="form-control mt-2" id="title" placeholder="Title of your post goes here...">
+      <br>
+      <label for="exampleFormControlInput1">Date and time</label>
+      <br>
+      <input type="date" id="date"> <input type="time" id="time">
+      <br><br>
+      <label for="exampleFormControlInput1">Type of activity</label>
+      <br>
+      <input type="text" id="activity">
+      <br><br>
+      <label for="exampleFormControlTextarea1">Detail descriptions</label>
+                  <textarea class="form-control mt-2" id="content" rows="3" placeholder="Content of your post goes here..."></textarea>
+      <button class="btn btn-primary mt-3" id="post">Post</button>
+    </div>
+    <br><br>
+
     <!-- our own footer goes here-->
     <nav id="footerPlaceholder"></nav>
     <!---------------------------------------------->
@@ -77,8 +86,7 @@
     <script src="./scripts/firebaseAPI_TEAM99.js"></script>
     <script src="./scripts/skeleton.js"></script>
     <script src="./scripts/navbar.js"></script>
-    <script src="./scripts/main.js"></script>
+    <script src="./scripts/post.js"></script>
     <!-- <script src="./scripts/script.js"></script> -->
-
   </body>
 </html>
