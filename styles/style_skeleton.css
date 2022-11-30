@@ -4,12 +4,20 @@
 }
 body{
     margin-bottom: 3%;
+    background-color: #1d1e22;
+    color: #d4d4dc;
 }
 .card{
     margin-bottom: 10px;
 }
 textarea {height: 40vh;}
 
+.nav-text {
+    color:#d4d4dc;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 590;
+    font-size:28px;
+}
 
 
 #footer_container {
@@ -38,6 +46,7 @@ textarea {height: 40vh;}
     justify-self: center;
     position: relative;
     left: 100%;
+    padding-top: 0.2vw;
 }
 
 #main_text {
@@ -71,20 +80,22 @@ textarea {height: 40vh;}
 }
 .foot_icons {
     /*resizing and recoloring icons*/
-    padding-top: 0.5vw;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
     font-size: 2.2vw;
-    color: whitesmoke;
+    color:#d4d4dc;
 }
 
 .button1{
-    background-color: blue; /* Green */
+    background-color: blue; 
     border: none;
-    color: whitesmoke   ;
+    color: whitesmoke;
     padding: 10px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 4px 2px;
+    margin: 2px 2px;
+    margin-bottom: 20px;
     cursor: pointer;
     border-radius: 10px;
     border: solid black 0.5px;
@@ -95,7 +106,7 @@ textarea {height: 40vh;}
     position: absolute;
     z-index: 1%;
     font-size: 1.2vw;
-    color: whitesmoke;
+    color:#d4d4dc;
     top: 72%;
 }
 
@@ -111,7 +122,7 @@ textarea {height: 40vh;}
     .foot_icons {
         /*resizing and recoloring icons*/
         font-size: 7vw;
-        color: whitesmoke;
+        color:#d4d4dc;
     }
 
     .centering_icon_text {
@@ -120,7 +131,7 @@ textarea {height: 40vh;}
         z-index: 1%;
         top: 59%;
         font-size: 4vw;
-        color: whitesmoke;
+        color:#d4d4dc;
     }
     #add_post_text {
         /*Placing text underneath the icon*/
