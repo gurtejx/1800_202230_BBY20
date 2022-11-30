@@ -21,3 +21,28 @@ function insertName() {
 }
 insertName(); //run the function
 
+function deleteButton() {
+  firebase.auth().onAuthStateChanged((user) => {
+    // Check if a user is signed in:
+    if (user) {
+      // Do something for the currently logged-in user here:
+      // console.log(user.uid);
+      user_Name = user.uid;
+
+      // now check each post
+      db.collection("posts")
+        .orderBy("postDate", "desc")
+        .get()
+        .then((result) => {
+          result.forEach((doc) => {
+            if (doc.data().owner == user_Name) {
+                const button = document.querySelector('.deleteButton');
+                button.setAttribute("display", "block");
+            }
+
+          });
+        });
+    }
+  });
+}
+deleteButton();
