@@ -10,7 +10,7 @@ function populateInfo() {
             
             .then(userDoc => {
                     //get the data fields of the user
-                    var activity = userDoc.data().details;
+                    var activity = userDoc.data().activity;
                     var location = userDoc.data().location;
                     var time = userDoc.data().time;
 

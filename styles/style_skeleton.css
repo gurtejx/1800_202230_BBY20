@@ -111,7 +111,6 @@ textarea {height: 40vh;}
     margin-bottom: 20px;
     cursor: pointer;
     border-radius: 10px;
-    /* border: solid #1d1e22 3.5px; */
 }
 
 .button1:hover {
@@ -139,10 +138,6 @@ textarea {height: 40vh;}
 .deletepost {
     display: none;
 }
-
-/* h2{
-    margin-left: 375px;
-} */
 
 
 
