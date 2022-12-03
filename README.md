@@ -32,8 +32,8 @@ Here are some known bugs: no bugs
 ## 6. Features for Future
 What we'd like to build in the future:
 * Add google map api
-* ...
-* ...
+* Make delete feature working
+* Chat feature
 	
 ## 7. Contents of Folder
 Content of the project folder:

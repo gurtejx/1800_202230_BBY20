@@ -1,4 +1,3 @@
-// 
 /**
  * When user enter the content in the post page, the data will be populate into a card template below.
  * And then append to the placeholder with the class "container" in the main page.

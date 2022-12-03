@@ -10,7 +10,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 });
 
 function goToLoginPage() {
-    window.location.href = './Login.html';
+    window.location.href = './login.html';
 }
 
 function logout() {
