@@ -1,9 +1,12 @@
 .jumbotron{
     text-align: center;
 }
+/* logout button invisible. */
 #logoutButton{
     display: none;
 }
+
+/*make login sign button invisible */
 #loginSignupButton  {
     display: none;
 }

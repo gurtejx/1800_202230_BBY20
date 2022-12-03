@@ -126,7 +126,10 @@ textarea {height: 40vh;}
     color:#d4d4dc;
     top: 72%;
 }
-
+.deleteButton{
+    width: 40px;
+    height: 20px;
+}
 .loggedIn {
     display: none;
 }
